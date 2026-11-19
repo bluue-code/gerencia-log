@@ -13,6 +13,21 @@
     <title>Formulário de Gerenciamento</title>
 </head>
 <body>
-    
+    <div id="area">
+    <form id="formulario" autocomplete="off">
+        <fieldset>
+        <legend>Formulário de Gerenciamento de Estoque</legend>
+        <label>Razão Social:</label><input class="campo_nome" type="text"><br>
+        <label>Email:</label><input class="campo_email" type="text"><br>
+        <label>Código:</label><input class="campo_código_loja" type="number"><br>
+        
+        <input class="btn_submit" type="submit" value="Enviar">
+
+        <!---
+            Pensei nessa parte, para o código validar se o código existe no sistema, caso sim ele prossegue com a atividade, caso não apresenta uma mensagem de erro até o usuário preencher um código existente.
+        -->
+        </fieldset>
+    </form>
+    </div>
 </body>
 </html>
