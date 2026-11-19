@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" media="all">
 
+    <link rel="stylesheet" href="estilos/max768.css" media="screen and (max-width: 768px) and (orientation: portrait)">
+
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -18,15 +21,16 @@
         <img src="inventory_2_60dp_FFFFFF_FILL0_wght400_GRAD0_opsz48.png" alt="" class="icon"></h1>
         <nav>
             <a href="#quem_somos">Nossa empresa</a>
-            <a href="#">Login</a>
-            <a href="#">Cadastro</a>
+            <a href="gerenciamento.html" target="_blank">Login</a>
+            <a href="cadastro.html" target="_blank">Cadastro</a>
             <a href="#">Suporte</a>
-            <a href="#">Nos Contate</a>
+            <a href="#contatos">Nos Contate</a>
         </nav>
     </header>
         
         <div class="img_intro">
-            <img src="logistica-comercio-eletronico.1.14.avif" alt="">
+            <source media="(max-width: 768px)" srcset="">
+            <img src="shutterstock_1767321221.jpg" alt="" width="100%">
         </div>
 
     <section>
@@ -36,21 +40,22 @@
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, adipisci voluptates? Quisquam consequatur vero, officiis illum quidem dolore non cumque, nihil iusto nisi commodi beatae excepturi consequuntur. Illo, sint tempore.</p>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi facilis suscipit fugiat aliquam nam illo voluptates saepe aperiam consequuntur praesentium, asperiores obcaecati, vero consequatur aliquid libero at facere quae alias?</p>
         </div>
-        <div class="login">
-            <h1>Login</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, libero molestias earum dolorum non dolorem maiores! Error rem deleniti labore accusantium fugiat, eligendi quas ullam cumque quam iste iure libero!</p>
-            <button>Fazer login</button>
-        </div>
         <div>
             <h1>Cadastre-se</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, libero molestias earum dolorum non dolorem maiores! Error rem deleniti labore accusantium fugiat, eligendi quas ullam cumque quam iste iure libero!</p>
-            <button>Cadastro</button>
+            <p>Clique no botão direito para ser direcionado para nossa área de cadastro de empresa!</p>
+            <a href="cadastro.html" target="_blank"><button>Cadastro</button></a>
+        </div>
+        <div class="login">
+            <h1>Login</h1>
+            <p>Ao clicar no botão você será direcionado a uma página onde você poderá gerenciar seu estoque.</p>
+            <a href="gerenciamento.html" target="_blank"><button>Fazer login</button></a>
         </div>
     </section>
-    <footer>
+    <footer id="#contatos">
         <div>
             <h1>Nos contate</h1>
             <p>Rua xxxxx 356, - Bairro xxx, 0000-000</p>
+            <p>(00) 0000-0000</p>
         </div>
 
     </footer>

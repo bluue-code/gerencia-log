@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+header > h1{
+    font-size: 5vw;
+    width: 100%;
+}
+
+header > h1 > .icon{
+    width: 6vw;
+    padding: 10px 10px 10px 100px;
+}
+
+header > nav > a{
+    font-size: 3vw;
+    padding: 10px;
+}
+
+.img_intro{
+    min-width: 10%;
+    border: none;
+    margin-top: 140px;
+}
+section{
+    display: flex;
+    justify-self: center;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 10px;
+
+}
+section > div{
+    width: 94%;
+    padding: 20px;
+}
+section > div > h1{
+    font-size: 5vw;
+}
+section > div > a > button{
+    font-size: 4vw;
+    width: 25vw;
+}
+footer > div{
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+footer > div > h1{
+    padding-bottom: 15px;
+    font-size: 5vw;
+}

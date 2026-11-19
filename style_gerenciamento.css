@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+:root{
+    --cor-1: #F9ECE5;
+    --cor-2: #1f0062;
+    --cor-3: #0B78B3;
+    --cor-4: #68150A;
+    --cor-5: #D73220;
+    --fonte-geral: "Roboto", sans-serif;
+}
+
+body{
+    background-color: var(--cor-1);
+}
