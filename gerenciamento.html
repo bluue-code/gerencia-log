@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
 
-    <link rel="stylesheet" href="style_gerenciamento.css">
+    <link rel="stylesheet" href="estilos/style_gerenciamento.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,20 +13,78 @@
     <title>Formulário de Gerenciamento</title>
 </head>
 <body>
-    <div id="area">
-    <form id="formulario" autocomplete="off">
+    <header>
+        <h1>Formulário para gerenciamento logístico</h1>
+    </header>
+    <div class="img_intro">
+            <img src="shutterstock_1767321221.jpg" alt="" width="100%">
+        </div>
+    <section>
+        <div>
+            <form id="info_empresa" autocomplete="off">
         
-        <legend>Formulário de Gerenciamento de Estoque</legend>
-        <label>Razão Social:</label><input class="campo_nome" type="text"><br>
-        <label>Email:</label><input class="campo_email" type="text"><br>
-        <label>Código:</label><input class="campo_código_loja" type="number"><br>
+                <legend>Informações sobre a empresa</legend>
+                <label>Razão Social:</label><input class="campo_nome" type="text"><br>
+                <label>Email:</label><input class="campo_email" type="text"><br>
+                <label>Código:</label><input class="campo_código_loja" type="text"><br>
         
-        <input class="btn_submit" type="submit" value="Pesquisar">
-
-        <!---
-            Pensei nessa parte, para o código validar se o código existe no sistema, caso sim ele prossegue com a atividade, caso não apresenta uma mensagem de erro até o usuário preencher um código existente.
+                <input class=" botao btn_submit" type="submit" value="Pesquisar">
+                <!---
+                    Pensei nessa parte, para o código validar se o código existe no sistema, caso sim ele prossegue com a atividade, caso não apresenta uma mensagem de erro até o usuário preencher um código existente.
+                -->
+            </form>
+        </div>
+        <!--
+            CASO o código da empresa esteja correto
         -->
-    </form>
-    </div>
+        <div>
+            <p>Tipo de operação: </p>
+            <form id="operacao">
+                <input type="radio" name="tipo-operacao" >
+                <label for="cadastro_de_produto">Cadastro de produto</label><br>
+                <input type="radio" name="tipo-operacao">
+                <label for="saida_de_produto">Saída de Produto</label><br>
+                <input type="radio" name="tipo-operacao" >
+                <label for="relatorio_do_estoque">Relatório do estoque</label><br>
+                <input class="botao btn_operacao" type="submit" value="Enviar">
+            </form>
+        </div>
+        <!--
+            CASO tenha selecionado a opção 1
+        -->
+        <div>
+            <form id="cad_prod">
+                <legend>Informações sobre o produto</legend>
+                <label for="nome">Nome: </label>
+                <input type="text" name="nome_prod" id="nome_prod">
+                <br>
+                <label for="codigo_prod">Código:</label>
+                <input type="text" name="codigo_prod" id="codigo_prod">
+                <br>
+                <label for="quantidade">Quantidade:</label>
+                <input type="number">
+                <br>
+                <input class="botao btn_prod" type="submit" value="Enviar">
+            </form>
+        </div>
+        <!--
+            CASO tenha selecionado a opção 2
+        -->
+        <div>
+            <form id="saida_prod">
+                <legend>Saída de produto</legend>
+                <label for="codigo_prod">Código:</label>
+                <input type="text" name="codigo_prod_saida" id="codigo_prod_saida">
+                <br>
+                <!--
+                    Validação se o código existe
+                -->
+                <label for="quant_saida">Quantidade: </label>
+                <input type="number" name="quant_saida" id="quant_saida">
+                <br>
+                <input class="botao btn_saida" type="submit" value="Enviar">
+            </form>
+        </div>
+    </section>
 </body>
 </html>
