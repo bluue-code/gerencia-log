@@ -37,7 +37,6 @@ h1{
 }
 section{
     position: relative;
-    margin: 30px;
     display: flex;
     flex-direction: column;
     justify-self: center;
